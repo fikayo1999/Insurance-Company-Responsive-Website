@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news-view</title>
+
+     <!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="news-view.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+     <!-- Scroll to top starts -->
+     <button id="topBtn">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+     <!-- Scroll to top ends -->
+
+     <nav>
+       <div class="menu-container nav-wrapper">
+           <div class="brand">
+               <a href="index.html">
+                   <img src="images/insurancy logo.png" alt="insurancy-logo" border="0">
+               </a>
+           </div>
+
+           <div class="hamberger">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+
+           <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="insurance.html">Insurance</a>
+                <ul class="dropdown-list">
+                    <li><a href="insurance-details.html">Health Policy</a></li>
+                    <li><a href="insurance-details.html">Auto Policy</a></li>
+                    <li><a href="insurance-details.html">Home Policy</a></li>
+                    <li><a href="insurance-details.html">Life Policy</a></li>
+                    <li><a href="insurance-details.html">Travel Policy</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li>
+                <button class="btn btn-blue">
+                    <a href="tel:9876654321">+234 9038353510</a>
+                </button>
+                 </li>
+           </ul>
+          </div>
+        </nav>
+               <!-- Navigation ends -->
+
+               <!-- ------------------------------- Blog page ------------------------- -->
+	<section class="news-view">
+		<div class="container">
+			<h2 class="heading">How credit affects your Insurance</h2>
+			<!-- <p class="author">by <a href="https://atulcodex.com">atulcodex</a></p> -->
+
+			<img src="images/news-1.png" alt="Featured post image" title="Featured post image" class="featured-img">
+
+			<h2 class="heading">Introduction</h2>
+
+			<p class="para-line">
+				Insurance is a contract, represented by a policy, in which a policyholder receives financial protection or reimbursement against losses from an insurance company. The company pools clients' risks to make payments more affordable for the insured.
+			</p>
+
+			<p class="para-line">
+				Insurance is a legal agreement between two parties – the insurer and the insured, also known as insurance coverage or insurance policy. The insurer provides financial coverage for the losses of the insured that s/he may bear under certain circumstances.
+			</p>
+
+			<h2 class="heading">Story</h2>
+
+			<p class="para-line">
+				Insurance is a way to manage your risk. When you buy insurance, you purchase protection against unexpected financial losses. The insurance company pays you or someone you choose if something bad happens to you.
+			</p>
+
+			<h2 class="heading">Conclusion</h2>
+
+			<p class="para-line">
+				Insurance is a large investment and you will most likely purchase multiple policies throughout your lifetime. It is essential that you know what each type of insurance covers and how it works so you can make the best decision about what to buy. Do not base your decision on just what is cheapest, but look at what it provides.
+                Take the time to shop around and find the right insurance for your situation. People often say they cannot afford insurance, but the reality is that they cannot afford not to have it. It can save them from thousands or more dollars in unplanned expenses when unexpected situations arise. You do not want to waste your money on policies that do not meet your needs, but the right insurance policy can protect you and your family from unforeseen disasters.
+			</p>
+
+
+			<div class="lead-form">
+				<form action="">
+					<div class="field-row">
+						<div class="input-field">
+							<label for="name">Full Name</label>
+							<input type="text" id="name" placeholder="Your name" required>
+						</div>
+
+						<div class="input-field">
+							<label for="number">Phone No.</label>
+							<input type="text" id="number" placeholder="Your phone number" required>
+						</div>
+
+						<div class="input-field">
+							<label for="text">Website</label>
+							<input type="text" id="website" placeholder="Your website link" required>
+						</div>
+					</div>
+
+					<div class="input-field">
+						<label for="text">Comment*</label>
+						<textarea name="comment" id="comment" cols="30" rows="10" placeholder="message line here"></textarea>
+					</div>
+
+					<input type="checkbox" id="save-info" name="save-info">
+					<label for="save-info">
+						Save my name, email, and website in this browser for the next time one comment.
+					</label>
+
+					<br>
+					<br>
+
+					<button class="btn btn-blue">
+						<a href="#">Post Comment</a>
+					</button>
+				  </form>
+			     </div>
+		      </div>
+	       </section>
+	            <!-- ------------------------------- Blog page ------------------------- -->
+
+
+
+                <!--------------- Footer ------------------>
+	       <footer>
+		        <div class="footer-container">
+			         <p class="para-line white">Copyright © Insurance2023</p>
+		       </div>
+	       </footer>
+	             <!--------------- Footer ------------------>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+
+</body>
+</html>
